@@ -1,8 +1,8 @@
 # memless_stat_tracker
-A lightweight python class that can track basic stats (mean, STD, etc) ongoing without storing any data.
+A lightweight python class that can track basic stats (mean, STD, sum of squares) ongoing without storing any data.
 
 
-The script contains a single class which is initialised with a single number, and an string flag to indicate which negative-handler to use.
+The script contains a single class which is initialised with a single number, and a string flag to indicate which negative-handler to use.
 The script calculates the mean, standard deviation, sum of squares, number of total entries so far, and, if "signsplit" has been selected, the same stats again except split between positive and negative values.
 The class can then have its 'updateStats' method called with a new number, which will recalculate all of the stats again with the new number included.
 Importantly, the script does not store ANY data - it recalculates the stats using mathematical principals.
